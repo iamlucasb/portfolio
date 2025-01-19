@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "@fontsource/quicksand";
+@import "@fontsource/crimson-text/400-italic.css";
+@import "@fontsource/montserrat";

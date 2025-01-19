@@ -7,7 +7,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <head>
+        <title>Lucas Bossard - Portfolio</title>
+        <meta
+          name="description"
+          content="Welcome to my portfolio website. Soon-to-be entrepreneur building something great!"
+        />
+      </head>
+      <body className="bg-taupe-500">{children}</body>
     </html>
   );
 }
