@@ -14,7 +14,11 @@ export default function RootLayout({
           content="Welcome to my portfolio website. Soon-to-be entrepreneur building something great!"
         />
       </head>
-      <body className="bg-taupe-500">{children}</body>
+      <body className="bg-taupe-500">
+        <header />
+        {children}
+        <footer />
+      </body>
     </html>
   );
 }
