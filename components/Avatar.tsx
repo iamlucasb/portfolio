@@ -7,9 +7,9 @@ interface Props {
   src: string;
   alt: string;
   size: Size.Medium | Size.Small;
-  // TODO Border? Color
+  onClick?: () => void;
 }
-const Avatar = ({ src, size, alt }: Props) => {
+const Avatar = ({ src, size, alt, onClick }: Props) => {
   return (
     <div
       className={clsx("relative ", {
@@ -23,6 +23,7 @@ const Avatar = ({ src, size, alt }: Props) => {
         alt={alt}
         fill
         sizes="(max-width: 640px) 8rem, (min-width: 641px) 10rem, (min-width: 768px) 14rem"
+        onClick={onClick}
         priority
       />
     </div>
